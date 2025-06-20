@@ -70,13 +70,13 @@ This project aims to develop a deep learning-based diagnostic system to detect f
 - Both training and validation loss decrease steadily, with no overfitting observed.
 
 ### **Loss Curve**
-See `outputs/efficientnet_b0_training_history.png` for the training and validation loss curves.
+See ![Train Loss Graph][outputs/efficientnet_b0_training_history.png] for the training and validation loss curves.
 
 ### **Co-occurrence Matrix**
-`outputs/co_occurrence_matrix.png` visualizes the co-occurrence of diseases. For example, diabetic retinopathy and hypertension often co-occur.
+![Co-O1ccurrence Matrix][outputs/co_occurrence_matrix.png] visualizes the co-occurrence of diseases. For example, diabetic retinopathy and hypertension often co-occur.
 
 ### **Confusion Matrix**
-The overall confusion matrix for all diseases is saved as `outputs/confusion_matrix.png`. This matrix summarizes the model's performance across all classes in a single image, making it easy to interpret true/false positives and negatives for each disease.
+The overall confusion matrix for all diseases is saved as ![Confusion Matrix][outputs/confusion_matrix.png]. This matrix summarizes the model's performance across all classes in a single image, making it easy to interpret true/false positives and negatives for each disease.
 
 ### **Model Evaluation Results**
 
@@ -117,40 +117,21 @@ The overall confusion matrix for all diseases is saved as `outputs/confusion_mat
 eye_disease_detection/
 ├── data/
 │   ├── ODIR-5K/
-│   │   ├── ODIR-5K/
-│   │   │   ├── Training Images/
-│   │   │   ├── Testing Images/
-│   │   │   └── data.xlsx
-│   │   ├── test/
-│   │   │   ├── left/
-│   │   │   └── right/
-│   │   ├── train/
-│   │   │   ├── left/
-│   │   │   └── right/
-│   │   ├── preprocessed_images/
-│   │   └── cleaned_data.xlsx
-│   └── full_df.csv
+│   ├── cleaned_data.xlsx
+│   └── ...
 ├── outputs/
 │   ├── best_efficientnet_b0.pth
-│   ├── confusion_matrix.png
 │   ├── efficientnet_b0_training_history.png
 │   ├── co_occurrence_matrix.png
+│   ├── confusion_matrix.png
 │   ├── disease_combinations.png
 │   ├── disease_distribution.png
-│   ├── gradio_demo.png
 │   └── ...
 ├── src/
-│   ├── __init__.py
-│   ├── analyze_dataset.py
-│   ├── dataset.py
-│   ├── demo.py
-│   ├── generate_report.py
-│   ├── model.py
+│
 │   ├── train.py
-│   ├── utils.py
+│   ├── demo.py
 │   └── ...
-├── main.py
-├── preprocess_dataset.py
 ├── requirements.txt
 └── ...
 ```
